@@ -1,0 +1,19 @@
+Tutorial para configurar a base de dados:
+
+Criar um usuário no seu linux. No terminal:
+	sudo adduser usuario_bd
+// usar a senha pass123. Caso tenha colocado outra senha:
+	sudo passwd usuario_bd 
+Entrar no super usuário do postgres, (já vem com a instalação do postgres):
+	sudo su - postgres
+Entrar na database template1, (já vem na instação do postgres):
+	psql template1
+Usar o comando criar usuário e colocar o usuario_bd:
+	CREATE USER usuario_bd WITH PASSWORD 'pass123';
+Criar database trabalho_bd:
+	CREATE DATABASE trabalho_bd;
+Garantir privilégios para o usuário:
+	GRANT ALL PRIVILEGES ON DATABASE trabalho_bd to usuario_bd;
+	sair:
+	\q
+	Usar Ctrl+D para logar fora do usuário postgres.
