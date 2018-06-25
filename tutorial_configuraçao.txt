@@ -17,3 +17,5 @@ Garantir privilégios para o usuário:
 	sair:
 	\q
 	Usar Ctrl+D para logar fora do usuário postgres.
+Caso o executável nao rode, tentar reinicializar o serviço do postgres pelo terminal:
+	sudo service postgresql restart
